@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+       <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            #flems-area {
+                min-height: 100vh;
+            }
+
+            .flems {
+                min-height: 100vh;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div id="flems-area"></div>
+        
+        <script src="./runtime.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./s1.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+        const flems = Flems(document.querySelector("#flems-area"), {
+            shareButton : false,
+            console: false,
+            files: [
+                {
+                    name : "index.html",
+                    content : ''
+                }
+            ]
+        })
+        </script>
+        <style>
+            .CodeMirror {
+                background-image: none!important;
+            }
+        </style>
+    </body> 
+</html>
