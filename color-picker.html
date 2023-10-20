@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Color picker</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@thednp/color-picker/dist/css/color-picker.min.css">
+        <style>
+            #color_rgb_alpha_0, [for="color_rgb_alpha_0"] {
+                display: none;
+            }
+
+            .color-controls .color-control:last-of-type {
+               display: none;
+            }
+
+            body {
+                max-width: 500px;
+                margin: 2rem auto;
+                text-align: center;
+                font-family: sans-serif;
+            }
+
+            input {
+                display: block;
+                margin: 1rem auto;
+                border: 0;
+                padding: .5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <label for="myPicker">Click to select a color</label>
+        <div class="color-picker">
+        <input
+            id="myPicker"
+            name="myPicker"
+            data-function="color-picker"
+            data-format="rgb"
+            class="color-preview"
+            value="#069"
+        />
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@thednp/color-picker/dist/js/color-picker.min.js"></script>
+        <script>
+            var myPicker = new ColorPicker('#myPicker');
+        </script>
+    </body>
+</html>
